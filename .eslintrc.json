@@ -1,3 +1,22 @@
 {
-  "extends": "next/core-web-vitals"
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "next/core-web-vitals",
+        "airbnb",
+        "airbnb-typescript",
+        "airbnb/hooks"
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.json" 
+    },
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-props-no-spreading": "warn",
+        "react/function-component-definition": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "linebreak-style": "off"
+    }
 }
